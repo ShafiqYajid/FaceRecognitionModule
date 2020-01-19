@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <title>Test Flask</title>
+  </head>
+  <body>
+    <h1>Test Flask</h1>
+
+    <img src="{{ url_for('video_feed') }}">
+
+    <form action="/shutdown" method="POST">
+	    <input type="submit" name="submit" value="Shutdown">
+	</form>
+
+  </body>
+</html>
